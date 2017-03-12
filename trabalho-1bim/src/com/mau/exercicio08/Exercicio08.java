@@ -74,8 +74,8 @@ public class Exercicio08 {
 			System.out.println("Digite o valor da base menor do Trapézio:");
 			double bMenorTrapezio = input.nextDouble();
 			
-		if(bMaiorTrapezio<bMenorTrapezio){
-			System.out.println("A base menor do Trapézio não pode ter um valor superior que a base maior!");
+		if(bMaiorTrapezio<=bMenorTrapezio){
+			System.out.println("A base menor do Trapézio não pode ter um valor superior ou igual à maior!");
 		}else{
 			
 			System.out.println("Digite o valor da altura do Trapézio:");
