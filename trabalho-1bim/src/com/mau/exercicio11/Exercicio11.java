@@ -13,28 +13,28 @@ import java.util.Scanner;
 	        System.out.println("Digite a data no formato: DD/MM/AAAA");
 	        String entradaUsuario = input.nextLine();
 	 
-	        if (validarData(entradaUsuario)){
-	            imprimeMesExtenso(entradaUsuario);
+	        if (checaData(entradaUsuario)){
+	            printMesExtenso(entradaUsuario);
 	        }
 	            
 	    }
 	 
-	    private static void imprimeMesExtenso(String entradaUsuario){
+	    private static void printMesExtenso(String entradaUsuario){
 	        char[] charData = new char[10];
-	        for (int i=0; i < 10; i++){
-	            charData[i] = entradaUsuario.charAt(i);
+	        for (int x=0; x < 10; x++){
+	            charData[x] = entradaUsuario.charAt(x);
 	        }
-	        	String mesCompleto = charData[3] + "" +  charData[4];
-	        	String dataCompleta = charData[0] + "" + charData[1];
-	        	String anoCompleto = charData[6] + "" + charData[7] + "" + charData[8] + "" + charData[9];
+	        	String mesFormatado = charData[3] + "" +  charData[4];
+	        	String dataFormatada = charData[0] + "" + charData[1];
+	        	String anoFormatado = charData[6] + "" + charData[7] + "" + charData[8] + "" + charData[9];
 	 
-	        Integer mesInteger = Integer.valueOf(mesCompleto);
+	        Integer mesInteger = Integer.valueOf(mesFormatado);
 	        	String mesConvertidoExtenso = mesExtenso(mesInteger);
 	 
-	        System.out.println(dataCompleta + " de " + mesConvertidoExtenso + " de " + anoCompleto);
+	        System.out.println(dataFormatada + " de " + mesConvertidoExtenso + " de " + anoFormatado);
 	    }
 	 
-	    private static boolean validarData(String entradaUsuario){
+	    private static boolean checaData(String entradaUsuario){
 	        Date data = null;
 	 
 	        if (entradaUsuario.length() < 10 || entradaUsuario.length() > 10){

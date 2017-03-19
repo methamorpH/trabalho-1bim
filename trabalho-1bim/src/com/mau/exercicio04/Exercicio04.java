@@ -1,18 +1,29 @@
 package com.mau.exercicio04;
+import java.util.Scanner;
 
 public class Exercicio04 {
 
 public static void main(String[] args) {
+	
+	 	Scanner input = new Scanner(System.in);
 		
-		double num1, exp, resultado;
+		Integer num1;
 		
-		num1 = 3;
-		exp = num1;
-		resultado = Math.pow(num1, exp);
+		System.out.println("Digite o número:");
+		num1 = input.nextInt();
 		
-		int resultadoFormatado = (int)resultado;
-		System.out.println("O resultado de 3³ vale: "+resultadoFormatado);
-
+		System.out.println("O resultado de "+num1+" elevado à "+num1+" é: "+exp(num1,num1));
+		
+}
+	
+static Integer exp(Integer base, Integer exp1){
+	
+		Integer resultado = 1;
+		if(exp1==0) return 1;
+	
+		for(int i=1; i<=exp1; i++) resultado*=base;
+		return resultado;
+	
 	}
 
 }

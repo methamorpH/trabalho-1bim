@@ -1,17 +1,20 @@
 package com.mau.exercicio03;
+import java.util.Scanner;
 
 public class Exercicio03 {
 
 	public static void main(String[] args) {
 		
-		double num1, exp, resultado;
+		Scanner input = new Scanner(System.in);
 		
-		num1 = 3;
-		exp = 2;
-		resultado = Math.pow(num1, exp);
+		Integer num1, resultado;
 		
-		int resultadoFormatado = (int)resultado;
-		System.out.println("O resultado de 3² vale: "+resultadoFormatado);
+		System.out.println("Digite o número:");
+		num1 = input.nextInt();
+		
+		resultado = num1 * num1;
+		
+		System.out.println("O resultado de "+num1+" elevado à dois vale: "+resultado);
 
 	}
 

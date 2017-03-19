@@ -16,7 +16,7 @@ public static void main(String[] args) {
 			System.out.println("Login efetuado com sucesso!");
 			
 		}else{
-			System.out.println("Usuário e/ou senhas incorretos.");
+			System.out.println("Usuário e/ou senha incorretos.");
 		}
 	}
 
