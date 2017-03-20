@@ -21,7 +21,7 @@ import java.util.Scanner;
 	 
 	    private static void printMesExtenso(String entradaUsuario){
 	        char[] charData = new char[10];
-	        for (int x=0; x < 10; x++){
+	        for (int x=0; x<10; x++){
 	            charData[x] = entradaUsuario.charAt(x);
 	        }
 	        	String mesFormatado = charData[3] + "" +  charData[4];

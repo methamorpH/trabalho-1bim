@@ -21,7 +21,7 @@ static Integer exp(Integer base, Integer exp1){
 		Integer resultado = 1;
 		if(exp1==0) return 1;
 	
-		for(int i=1; i<=exp1; i++) resultado*=base;
+		for(int x=1; x<=exp1; x++) resultado*=base;
 		return resultado;
 	
 	}

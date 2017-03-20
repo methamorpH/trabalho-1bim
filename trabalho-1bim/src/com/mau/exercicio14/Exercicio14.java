@@ -90,8 +90,8 @@ public class Exercicio14 {
 		System.out.println("Digite o valor à ser fatorado:");
 		num1 = input.nextInt();
 		resultado = 1;
-			for (int i = 1; i <= num1; i++){
-				resultado *= i;
+			for (int x = 1; x <= num1; x++){
+				resultado *= x;
 				}
 			System.out.println("O resultado da fatoração é: "+resultado);
 		}		
